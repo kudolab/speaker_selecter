@@ -1,6 +1,6 @@
 # speaker_selecter ver2
 
-## [ 注 ] \_(・v・)!!!
+## [ 注 ] \\\_(・v・)!!!
 以下のリポジトリから
 [https://github.com/kudolab/speaker_selecter_archive](https://github.com/kudolab/speaker_selecter_archive)
 - conf_files
@@ -8,6 +8,8 @@
 
 のみを格納しています。
 
+
+## 概要
 
 伝達関数測定装置のスピーカーセレクター。
 
