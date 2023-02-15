@@ -2,13 +2,14 @@
 
 ### ver1.0: bashスクリプトでの実装
 
-以下に保存されていたスクリプトを、格納しています。
-[](https://github.com/kudolab/speaker_selecter_archive/tree/main/raspi_backup/pi/Selector)
+[](https://github.com/kudolab/speaker_selecter/tree/main/ver1)
 
 
 ### ver2.0: python-flaskを使ったクライアント-サーバーモデルの実装
 
-
+[](https://github.com/kudolab/speaker_selecter/tree/main/ver2)
 
 
 ### ver3.0: ver2.0に対して、改良を加えたもの
+
+[](https://github.com/kudolab/speaker_selecter/tree/main/ver3)
