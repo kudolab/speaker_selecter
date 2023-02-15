@@ -1,12 +1,12 @@
 # speaker_selecter ver2
 
-<span style="color:#ec024d;">
+<span style="color:red;">
 以下のリポジトリから
 </span>
 
 [https://github.com/kudolab/speaker_selecter_archive](https://github.com/kudolab/speaker_selecter_archive)
 
-<span style="color:#ec024d;">
+<span style="color:red;">
 
 - conf_files
 - speaker
