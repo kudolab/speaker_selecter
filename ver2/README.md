@@ -1,18 +1,13 @@
 # speaker_selecter ver2
 
-<span style="color:red;">
+## [ 注 ] \_(・v・)!!!
 以下のリポジトリから
-</span>
-
 [https://github.com/kudolab/speaker_selecter_archive](https://github.com/kudolab/speaker_selecter_archive)
-
-<span style="color:red;">
-
 - conf_files
 - speaker
 
 のみを格納しています。
-</span>
+
 
 伝達関数測定装置のスピーカーセレクター。
 
