@@ -73,7 +73,8 @@ def put_speaker_num():
 
 if __name__ == "__main__":
     #GPIO.setmode(GPIO.BCM)
-    setting_file_path = "./setting.toml"
+    #setting_file_path = "./setting.toml"
+    setting_file_path = "/home/pi/speaker_selecter/ver3/setting.toml"
     setting_dict = toybox.load_setting_toml(setting_file_path)
     speakerBCM_list = toybox.make_BCM_list(setting_dict["SPEAKER_IDandBCM"])
     
