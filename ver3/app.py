@@ -2,13 +2,13 @@ import sys
 import json
 import tomli
 
-##import RPi.GPIO as GPIO
+import RPi.GPIO as GPIO
 from flask import Flask, request, jsonify
 
 # toybox has handmade modules
 import toybox
 
-##GPIO.setmode(GPIO.BCM)
+GPIO.setmode(GPIO.BCM)
 app = Flask(__name__)
 
 @app.route("/health", methods=["GET"])
@@ -57,10 +57,10 @@ def put_speaker_num():
     # speaker select process
     print(f"Present speaker number ... {speaker_num}", file=sys.stderr)
     # init pin (BCM)
-    ##toybox.init_BCM(speakerBCM_list)
+    toybox.init_BCM(speakerBCM_list)
     # Turn ON the GPIO pin use "GPIO.output(speakerBCM, 1)
     #toybox.on_BCM(speakerBCM_list[speaker_num-1]) # !use this
-    #toybox.on_BCM(speakerBCM_list[toybox.ID2BCM(speaker_num)])
+    toybox.on_BCM(speakerBCM_list[toybox.ID2BCM(speaker_num)])
     ##toybox.on_BCM(speaker_num) # !test
     # make "ON GPIO pin history .json file"
     toybox.save_json("speaker_nowON.json", request.json)
@@ -77,8 +77,8 @@ if __name__ == "__main__":
     speakerBCM_list = toybox.make_BCM_list(setting_dict["SPEAKER_IDandBCM"])
     
     # init BCM. Speaker1 is ON at first
-    ##toybox.init_BCM(speakerBCM_list)
-    ##toybox.on_BCM(speakerBCM_list[0])
+    toybox.init_BCM(speakerBCM_list)
+    toybox.on_BCM(speakerBCM_list[0])
     toybox.save_json("speaker_nowON.json", {"speaker_num": speakerBCM_list[0]})
 
     app.run(host="0.0.0.0", port=80)

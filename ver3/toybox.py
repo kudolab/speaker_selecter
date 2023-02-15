@@ -1,7 +1,7 @@
 ## import RPI.GPIO as GPIO
 import tomli
 import json
-#import RPi.GPIO as GPIO
+import RPi.GPIO as GPIO
 # speakerID_list global  is better??
 
 def load_setting_toml(toml_file_path: str) -> dict:
