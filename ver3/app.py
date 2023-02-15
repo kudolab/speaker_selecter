@@ -8,6 +8,7 @@ from flask import Flask, request, jsonify
 # toybox has handmade modules
 import toybox
 
+GPIO.cleanup()
 GPIO.setmode(GPIO.BCM)
 app = Flask(__name__)
 
