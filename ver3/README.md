@@ -32,7 +32,7 @@ pip3 install -r requirement.txt
 
 # if Permission denied
 chmod a+x app.py
-
+chmod a+x /home/pi/speaker_selecter/ver3/venv/bin
 # for systemd
 
 ```
