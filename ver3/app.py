@@ -67,6 +67,7 @@ if __name__ == "__main__":
     toybox.init_BCM(speakerBCM_list)
     toybox.on_BCM(speakerBCM_list[0])
     toybox.save_json("speaker_nowON.json", {"speaker_num": speakerBCM_list[0]})
-
+    
+    # run server
     app.run(host="0.0.0.0", port=80)
     GPIO.cleanup()
