@@ -8,7 +8,6 @@ from flask import Flask, request, jsonify
 # toybox has handmade modules
 import toybox
 
-GPIO.cleanup()
 GPIO.setmode(GPIO.BCM)
 app = Flask(__name__)
 
@@ -83,3 +82,4 @@ if __name__ == "__main__":
     toybox.save_json("speaker_nowON.json", {"speaker_num": speakerBCM_list[0]})
 
     app.run(host="0.0.0.0", port=80)
+    GPIO.cleanup()
