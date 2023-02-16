@@ -21,6 +21,16 @@ cd ~
 git clone https://github.com/kudolab/speaker_selecter.git
 ```
 
+
+
+```
+
+python3 -m venv venv
+. ./venv/bin/activate
+pip3 install -r requirements.txt
+```
+
+comments
 ```
 cd ~/speaker_selecter/ver3
 
